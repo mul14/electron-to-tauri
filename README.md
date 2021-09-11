@@ -35,23 +35,19 @@ app.getPath('crashDump');    //
 
 use tauri::api::path;
 
-path::home_dir();        // /Users/mul14
-path::desktop_dir();     // /Users/mul14/Desktop
-path::document_dir();    // /Users/mul14/Documents
-path::download_dir();    // /Users/mul14/Downloads
-path::audio_dir();       // /Users/mul14/Music
-path::video_dir();       // /Users/mul14/Movies
-path::picture_dir();     // /Users/mul14/Pictures
-path::public_dir();      // /Users/mul14/Public
+path::home_dir();        // ~/
+path::desktop_dir();     // ~/Desktop
+path::document_dir();    // ~/Documents
+path::download_dir();    // ~/Downloads
+path::audio_dir();       // ~/Music
+path::video_dir();       // ~/Movies
+path::picture_dir();     // ~/Pictures
+path::public_dir();      // ~/Public
 
-path::data_dir();        // /Users/mul14/Library/Application\ Support
-path::local_data_dir();  // /Users/mul14/Library/Application\ Support
-path::config_dir();      // /Users/mul14/Library/Application\ Support
+path::data_dir();        // ~/Library/Application\ Support
+path::local_data_dir();  // ~/Library/Application\ Support
+path::config_dir();      // ~/Library/Application\ Support
 
-path::cache_dir();       // /Users/mul14/Library/Caches
-path::font_dir();        // /Users/mul14/Library/Fonts
+path::cache_dir();       // ~/Library/Caches
+path::font_dir();        // ~/Library/Fonts
 ```
-
-
-
-
