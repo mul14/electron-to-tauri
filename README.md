@@ -89,3 +89,28 @@ fn main() {
 
 }
 ```
+
+
+## Open a folder/file with default application
+
+```js
+const { shell } = require('electron')
+
+await shell.showItemInFolder('/');
+await shell.openPath('/Users/mul14/sample.txt');
+```
+
+```rs
+fn main() {
+    // Open folder with default application
+    let _ = shell::open("/".into(), None);
+
+    // Open text file with default application
+    let result = shell::open("/Users/mul14/sample.txt".into(), None);
+
+    match result {
+        Ok(v) => println!("Success: {:?}", v),
+        Err(e) => println!("Error: {:?}", e),
+    }
+}
+```
