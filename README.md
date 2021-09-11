@@ -35,21 +35,25 @@ app.getPath('crashDump');    //
 
 use tauri::api::path;
 
-path::home_dir();        // ~/
-path::desktop_dir();     // ~/Desktop
-path::document_dir();    // ~/Documents
-path::download_dir();    // ~/Downloads
-path::audio_dir();       // ~/Music
-path::video_dir();       // ~/Movies
-path::picture_dir();     // ~/Pictures
-path::public_dir();      // ~/Public
+fn main() {
 
-path::data_dir();        // ~/Library/Application\ Support
-path::local_data_dir();  // ~/Library/Application\ Support
-path::config_dir();      // ~/Library/Application\ Support
+    path::home_dir();        // ~/
+    path::desktop_dir();     // ~/Desktop
+    path::document_dir();    // ~/Documents
+    path::download_dir();    // ~/Downloads
+    path::audio_dir();       // ~/Music
+    path::video_dir();       // ~/Movies
+    path::picture_dir();     // ~/Pictures
+    path::public_dir();      // ~/Public
 
-path::cache_dir();       // ~/Library/Caches
-path::font_dir();        // ~/Library/Fonts
+    path::data_dir();        // ~/Library/Application\ Support
+    path::local_data_dir();  // ~/Library/Application\ Support
+    path::config_dir();      // ~/Library/Application\ Support
+
+    path::cache_dir();       // ~/Library/Caches
+    path::font_dir();        // ~/Library/Fonts
+
+}
 ```
 
 
