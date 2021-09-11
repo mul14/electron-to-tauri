@@ -51,3 +51,37 @@ path::config_dir();      // ~/Library/Application\ Support
 path::cache_dir();       // ~/Library/Caches
 path::font_dir();        // ~/Library/Fonts
 ```
+
+
+## Desktop Notification
+
+```js
+// Electron
+
+const { Notification } = require('electron');
+
+new Notification({ 
+  title: 'Greetings', 
+  body: 'Hello World',
+}).show();
+```
+
+```rs
+// Tauri
+
+use tauri::api::notification;
+
+fn main() {
+
+    let result = notification::Notification::new("id")
+        .title("Greetings")
+        .body("Hello world")
+        .show();
+
+    match result {
+        Ok(v) => println!("Success: {:?}", v),
+        Err(e) => println!("Error: {:?}", e),
+    }
+
+}
+```
